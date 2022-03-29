@@ -47,108 +47,121 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-          resizeToAvoidBottomInset: false,
-          appBar: AppBar(
-            title: const Text("test"),
-            actions: [
-              Container(
-                  padding: const EdgeInsetsDirectional.all(15),
-                  height: double.infinity,
-                  child: Center(
-                    child: Text((controller.hasClients
-                            ? (controller.page!.toInt() + 1).toString()
-                            : "1") +
-                        "/" +
-                        widget.data.length.toString()),
-                  )),
-              ElevatedButton(
-                onPressed: () => setState(() {
-                  if (controller.page!.toInt() != 0) {
-                    controller.jumpToPage(controller.page!.toInt() - 1);
-                  }
-                }),
-                child: const Icon(
-                  Icons.arrow_left_outlined,
-                  size: 48,
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () => setState(() {
-                  // print(widget.data.length);
-                  // print(controller.page!.toInt());
-                  if (controller.page!.toInt() != widget.data.length - 1) {
-                    controller.jumpToPage(controller.page!.toInt() + 1);
-                  }
-                }),
-                child: const Icon(
-                  Icons.arrow_right_outlined,
-                  size: 48,
-                ),
-              ),
-            ],
-          ),
-          body: PageView.builder(
-            controller: controller,
-            itemCount: widget.data.length,
-            itemBuilder: (context, index) {
-              return Column(
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.all(10),
-                        width: MediaQuery.of(context).size.width / 4,
-                        child: Image.network(widget.data[index][5].toString(),
-                            fit: BoxFit.fitWidth),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.all(10),
-                        width: MediaQuery.of(context).size.width / 4,
-                        child: Image.network(widget.data[index][6].toString(),
-                            fit: BoxFit.fitWidth),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.all(10),
-                        width: MediaQuery.of(context).size.width / 4,
-                        child: Image.network(widget.data[index][7].toString(),
-                            fit: BoxFit.contain),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.all(10),
-                        width: MediaQuery.of(context).size.width / 4,
-                        child: BeforeAfter(
-                            beforeImage: Image.network(
-                              widget.data[index][5].toString(),
-                              fit: BoxFit.fitWidth,
-                            ),
-                            afterImage: Image.network(
-                              widget.data[index][6].toString(),
-                              fit: BoxFit.fitWidth,
-                            )),
-                      ),
-                      // Image.network(
-                      //   widget.data[index][6].toString(),
-                      // ),
-                      // Image.network(
-                      //   widget.data[index][7].toString(),
-                      // ),
-                    ],
+      home: DefaultTabController(
+        length: 2,
+        child: Scaffold(
+            resizeToAvoidBottomInset: false,
+            appBar: AppBar(
+              bottom: const TabBar(tabs: [
+                Text("Compare"),
+                Text("Before-After"),
+              ]),
+              title: const Text("test"),
+              actions: [
+                Container(
+                    padding: const EdgeInsetsDirectional.all(15),
+                    height: double.infinity,
+                    child: Center(
+                      child: Text((controller.hasClients
+                              ? (controller.page!.toInt() + 1).toString()
+                              : "1") +
+                          "/" +
+                          widget.data.length.toString()),
+                    )),
+                ElevatedButton(
+                  onPressed: () => setState(() {
+                    if (controller.page!.toInt() != 0) {
+                      controller.jumpToPage(controller.page!.toInt() - 1);
+                    }
+                  }),
+                  child: const Icon(
+                    Icons.arrow_left_outlined,
+                    size: 48,
                   ),
-                  Text("Case: " +
-                      widget.data[index][0].toString() +
-                      "\nEffect: " +
-                      widget.data[index][1].toString() +
-                      "\nDescription: " +
-                      widget.data[index][3].toString() +
-                      "\nPhoto name: " +
-                      widget.data[index][4].toString() +
-                      "\n Result: " +
-                      widget.data[index][8].toString()),
-                ],
-              );
-            },
-          )),
+                ),
+                ElevatedButton(
+                  onPressed: () => setState(() {
+                    // print(widget.data.length);
+                    // print(controller.page!.toInt());
+                    if (controller.page!.toInt() != widget.data.length - 1) {
+                      controller.jumpToPage(controller.page!.toInt() + 1);
+                    }
+                  }),
+                  child: const Icon(
+                    Icons.arrow_right_outlined,
+                    size: 48,
+                  ),
+                ),
+              ],
+            ),
+            body: PageView.builder(
+              controller: controller,
+              itemCount: widget.data.length,
+              itemBuilder: (context, index) {
+                return TabBarView(
+                  children: [
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              width: MediaQuery.of(context).size.width / 3,
+                              child: Image.network(
+                                  widget.data[index][5].toString(),
+                                  fit: BoxFit.fitWidth),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              width: MediaQuery.of(context).size.width / 3,
+                              child: Image.network(
+                                  widget.data[index][6].toString(),
+                                  fit: BoxFit.fitWidth),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              width: MediaQuery.of(context).size.width / 3,
+                              child: Image.network(
+                                  widget.data[index][7].toString(),
+                                  fit: BoxFit.contain),
+                            ),
+                          ],
+                        ),
+                        Flexible(
+                          child: Text(
+                            "Case: " +
+                                widget.data[index][0].toString() +
+                                "\nEffect: " +
+                                widget.data[index][1].toString() +
+                                "\nDescription: " +
+                                widget.data[index][3].toString() +
+                                "\nPhoto name: " +
+                                widget.data[index][4].toString() +
+                                "\n Result: " +
+                                widget.data[index][8].toString(),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(10),
+                      width: MediaQuery.of(context).size.width,
+                      child: BeforeAfter(
+                          beforeImage: Image.network(
+                            widget.data[index][5].toString(),
+                            fit: BoxFit.contain,
+                          ),
+                          afterImage: Image.network(
+                            widget.data[index][6].toString(),
+                            fit: BoxFit.contain,
+                          )),
+                    ),
+                  ],
+                );
+              },
+            )),
+      ),
     );
   }
 }
