@@ -8,6 +8,7 @@ import 'package:before_after/before_after.dart';
 import 'package:csv/csv.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
+import 'image_widget.dart';
 
 Future<List<List<dynamic>>> parse() async {
   List<List<dynamic>> ret = [];
@@ -103,27 +104,9 @@ class _MyAppState extends State<MyApp> {
                       children: [
                         Row(
                           children: [
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              width: MediaQuery.of(context).size.width / 3,
-                              child: Image.network(
-                                  widget.data[index][5].toString(),
-                                  fit: BoxFit.fitWidth),
-                            ),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              width: MediaQuery.of(context).size.width / 3,
-                              child: Image.network(
-                                  widget.data[index][6].toString(),
-                                  fit: BoxFit.fitWidth),
-                            ),
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              width: MediaQuery.of(context).size.width / 3,
-                              child: Image.network(
-                                  widget.data[index][7].toString(),
-                                  fit: BoxFit.contain),
-                            ),
+                            ImageWidget(widget.data[index][5].toString()),
+                            ImageWidget(widget.data[index][6].toString()),
+                            ImageWidget(widget.data[index][7].toString()),
                           ],
                         ),
                         Flexible(
