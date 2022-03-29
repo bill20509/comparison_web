@@ -1,0 +1,82 @@
+Build ID,51
+os_ver,15.0
+name,00008030-001A482C3EF2802E
+brand_name,Apple
+brand_type,iPhone11Pro
+Source Photo,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/image.zip
+Test ID,Test Name,Result,Description,Image Name,Base Photo,Upload Photo,Result Photo,Error Message
+0300000052,Apply skin smoother,PASS,Apply skin smoother with Intensity 60,018.jpg, , , , 
+0300000052,Apply skin smoother,FAIL,Apply skin smoother with Intensity 60,017.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/base/0300000052_017.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/upload/0300000052_017.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/result/0300000052_017.jpg,result_metric = 164.0
+0300000052,Apply skin smoother,PASS,Apply skin smoother with Intensity 60,010.jpg, , , , 
+0300000052,Apply skin smoother,PASS,Apply skin smoother with Intensity 60,023.jpg, , , , 
+0300000052,Apply skin smoother,FAIL,Apply skin smoother with Intensity 60,004.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/base/0300000052_004.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/upload/0300000052_004.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/result/0300000052_004.jpg,result_metric = 8.0
+0300000053,Apply face shaper,PASS,Apply face shaper with Intensity -50,018.jpg, , , , 
+0300000053,Apply face shaper,PASS,Apply face shaper with Intensity -50,017.jpg, , , , 
+0300000053,Apply face shaper,PASS,Apply face shaper with Intensity -50,010.jpg, , , , 
+0300000053,Apply face shaper,PASS,Apply face shaper with Intensity -50,023.jpg, , , , 
+0300000053,Apply face shaper,PASS,Apply face shaper with Intensity -50,004.jpg, , , , 
+0300000054,Apply skin_tone,PASS,Apply skin_tone with color 643116 and Intensity 100,018.jpg, , , , 
+0300000054,Apply skin_tone,FAIL,Apply skin_tone with color 643116 and Intensity 100,017.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/base/0300000054_017.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/upload/0300000054_017.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/result/0300000054_017.jpg,result_metric = 846.0
+0300000054,Apply skin_tone,PASS,Apply skin_tone with color 643116 and Intensity 100,010.jpg, , , , 
+0300000054,Apply skin_tone,PASS,Apply skin_tone with color 643116 and Intensity 100,023.jpg, , , , 
+0300000054,Apply skin_tone,FAIL,Apply skin_tone with color 643116 and Intensity 100,004.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/base/0300000054_004.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/upload/0300000054_004.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/result/0300000054_004.jpg,result_metric = 63.0
+0300000055,Apply nose_enhance,PASS,"Apply nose_enhance, ehance = 60, size = 10, length = 30, bridge =80, tip = 30",018.jpg, , , , 
+0300000055,Apply nose_enhance,PASS,"Apply nose_enhance, ehance = 60, size = 10, length = 30, bridge =80, tip = 30",017.jpg, , , , 
+0300000055,Apply nose_enhance,PASS,"Apply nose_enhance, ehance = 60, size = 10, length = 30, bridge =80, tip = 30",010.jpg, , , , 
+0300000055,Apply nose_enhance,PASS,"Apply nose_enhance, ehance = 60, size = 10, length = 30, bridge =80, tip = 30",023.jpg, , , , 
+0300000055,Apply nose_enhance,PASS,"Apply nose_enhance, ehance = 60, size = 10, length = 30, bridge =80, tip = 30",004.jpg, , , , 
+0300000056,Apply smile,PASS,Apply smile with Intensity 100,018.jpg, , , , 
+0300000056,Apply smile,PASS,Apply smile with Intensity 100,017.jpg, , , , 
+0300000056,Apply smile,PASS,Apply smile with Intensity 100,010.jpg, , , , 
+0300000056,Apply smile,PASS,Apply smile with Intensity 100,023.jpg, , , , 
+0300000056,Apply smile,PASS,Apply smile with Intensity 100,004.jpg, , , , 
+0300000057,Apply teeth_whitener,PASS,Apply teeth_whitener with Intensity 100,018.jpg, , , , 
+0300000057,Apply teeth_whitener,PASS,Apply teeth_whitener with Intensity 100,017.jpg, , , , 
+0300000057,Apply teeth_whitener,PASS,Apply teeth_whitener with Intensity 100,010.jpg, , , , 
+0300000057,Apply teeth_whitener,PASS,Apply teeth_whitener with Intensity 100,023.jpg, , , , 
+0300000057,Apply teeth_whitener,PASS,Apply teeth_whitener with Intensity 100,004.jpg, , , , 
+0300000058,Apply brighten_eye,PASS,Apply brighten_eye with Intensity 100,018.jpg, , , , 
+0300000058,Apply brighten_eye,PASS,Apply brighten_eye with Intensity 100,017.jpg, , , , 
+0300000058,Apply brighten_eye,PASS,Apply brighten_eye with Intensity 100,010.jpg, , , , 
+0300000058,Apply brighten_eye,PASS,Apply brighten_eye with Intensity 100,023.jpg, , , , 
+0300000058,Apply brighten_eye,PASS,Apply brighten_eye with Intensity 100,004.jpg, , , , 
+0300000059,Apply eye_bag,PASS,Apply eye_bag with Intensity 100,018.jpg, , , , 
+0300000059,Apply eye_bag,PASS,Apply eye_bag with Intensity 100,017.jpg, , , , 
+0300000059,Apply eye_bag,PASS,Apply eye_bag with Intensity 100,010.jpg, , , , 
+0300000059,Apply eye_bag,PASS,Apply eye_bag with Intensity 100,023.jpg, , , , 
+0300000059,Apply eye_bag,FAIL,Apply eye_bag with Intensity 100,004.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/base/0300000059_004.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/upload/0300000059_004.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/result/0300000059_004.jpg,result_metric = 2.0
+0300000060,Apply acne,FAIL,Apply acne,018.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/base/0300000060_018.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/upload/0300000060_018.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/result/0300000060_018.jpg,result_metric = 5089.0
+0300000060,Apply acne,PASS,Apply acne,017.jpg, , , , 
+0300000060,Apply acne,FAIL,Apply acne,010.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/base/0300000060_010.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/upload/0300000060_010.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/result/0300000060_010.jpg,result_metric = 2304.0
+0300000060,Apply acne,PASS,Apply acne,023.jpg, , , , 
+0300000060,Apply acne,FAIL,Apply acne,004.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/base/0300000060_004.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/upload/0300000060_004.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/result/0300000060_004.jpg,result_metric = 497.0
+0300000061,Apply blush,PASS,Apply blush with Intensity 100,018.jpg, , , , 
+0300000061,Apply blush,PASS,Apply blush with Intensity 100,017.jpg, , , , 
+0300000061,Apply blush,PASS,Apply blush with Intensity 100,010.jpg, , , , 
+0300000061,Apply blush,PASS,Apply blush with Intensity 100,023.jpg, , , , 
+0300000061,Apply blush,PASS,Apply blush with Intensity 100,004.jpg, , , , 
+0300000062,Apply taller,PASS,Apply taller with Intensity 100,018.jpg, , , , 
+0300000062,Apply taller,PASS,Apply taller with Intensity 100,017.jpg, , , , 
+0300000062,Apply taller,PASS,Apply taller with Intensity 100,010.jpg, , , , 
+0300000062,Apply taller,PASS,Apply taller with Intensity 100,023.jpg, , , , 
+0300000062,Apply taller,PASS,Apply taller with Intensity 100,004.jpg, , , , 
+0300000063,Apply oid_face,PASS,Apply oid_face with Intensity 100,018.jpg, , , , 
+0300000063,Apply oid_face,FAIL,Apply oid_face with Intensity 100,017.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/base/0300000063_017.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/upload/0300000063_017.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/result/0300000063_017.jpg,result_metric = 94.0
+0300000063,Apply oid_face,PASS,Apply oid_face with Intensity 100,010.jpg, , , , 
+0300000063,Apply oid_face,PASS,Apply oid_face with Intensity 100,023.jpg, , , , 
+0300000063,Apply oid_face,PASS,Apply oid_face with Intensity 100,004.jpg, , , , 
+0300000064,Apply face_contour,PASS,Apply face_contour with Intensity 100,018.jpg, , , , 
+0300000064,Apply face_contour,FAIL,Apply face_contour with Intensity 100,017.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/base/0300000064_017.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/upload/0300000064_017.jpg,http://192.168.28.17/~qapf/upload/YCP/iOS/unit_test/report/51/upload_photo/result/0300000064_017.jpg,result_metric = 2.0
+0300000064,Apply face_contour,PASS,Apply face_contour with Intensity 100,010.jpg, , , , 
+0300000064,Apply face_contour,PASS,Apply face_contour with Intensity 100,023.jpg, , , , 
+0300000064,Apply face_contour,PASS,Apply face_contour with Intensity 100,004.jpg, , , , 
+0300000065,Apply double_eyelid,PASS,Apply eye_lid guid = 911C36F4-FEBF-11E4-AECB-AFB3B7CA00B9 & intensity = 100,018.jpg, , , , 
+0300000065,Apply double_eyelid,PASS,Apply eye_lid guid = 911C36F4-FEBF-11E4-AECB-AFB3B7CA00B9 & intensity = 100,017.jpg, , , , 
+0300000065,Apply double_eyelid,PASS,Apply eye_lid guid = 911C36F4-FEBF-11E4-AECB-AFB3B7CA00B9 & intensity = 100,010.jpg, , , , 
+0300000065,Apply double_eyelid,PASS,Apply eye_lid guid = 911C36F4-FEBF-11E4-AECB-AFB3B7CA00B9 & intensity = 100,023.jpg, , , , 
+0300000065,Apply double_eyelid,PASS,Apply eye_lid guid = 911C36F4-FEBF-11E4-AECB-AFB3B7CA00B9 & intensity = 100,004.jpg, , , , 
+0300000066,Apply red_eye,PASS,Apply red_eye,018.jpg, , , , 
+0300000066,Apply red_eye,PASS,Apply red_eye,017.jpg, , , , 
+0300000066,Apply red_eye,PASS,Apply red_eye,010.jpg, , , , 
+0300000066,Apply red_eye,PASS,Apply red_eye,023.jpg, , , , 
+0300000066,Apply red_eye,PASS,Apply red_eye,004.jpg, , , , 
