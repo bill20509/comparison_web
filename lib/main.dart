@@ -138,7 +138,7 @@ class _MyAppState extends State<MyApp> {
                                 widget.data[index][4].toString() +
                                 "\nResult: " +
                                 widget.data[index][8].toString(),
-                            overflow: TextOverflow.ellipsis,
+                            overflow: TextOverflow.clip,
                           ),
                         ),
                       ],
