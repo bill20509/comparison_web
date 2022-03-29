@@ -17,7 +17,7 @@ Future<List<List<dynamic>>> parse() async {
   for (int i = 7; i < reportCSV.length; i++) {
     String? pass = reportCSV[i][2];
     if (pass == "FAIL") {
-      print(reportCSV[i]);
+      // print(reportCSV[i]);
       ret.add(reportCSV[i]);
     }
   }
@@ -56,7 +56,6 @@ class _MyAppState extends State<MyApp> {
                 Text("Compare"),
                 Text("Before-After"),
               ]),
-              title: const Text("test"),
               actions: [
                 Container(
                     padding: const EdgeInsetsDirectional.all(15),
@@ -137,7 +136,7 @@ class _MyAppState extends State<MyApp> {
                                 widget.data[index][3].toString() +
                                 "\nPhoto name: " +
                                 widget.data[index][4].toString() +
-                                "\n Result: " +
+                                "\nResult: " +
                                 widget.data[index][8].toString(),
                             overflow: TextOverflow.ellipsis,
                           ),
